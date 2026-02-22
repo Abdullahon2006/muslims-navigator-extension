@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Work+Sans:wght@400;500;600&display=swap');
+
+:root {
+  --bg: linear-gradient(120deg, #f8f1e8, #e6f0d8 40%, #d7ecd0 100%);
+  --panel: rgba(255, 255, 255, 0.9);
+  --text: #1e2a1f;
+  --accent: #2a5b3f;
+  --muted: #5a6b5a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.settings {
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+h1 {
+  font-family: 'Fraunces', serif;
+  margin: 0 0 6px;
+}
+
+.subtitle {
+  margin: 0 0 20px;
+  color: var(--muted);
+}
+
+.panel {
+  background: var(--panel);
+  border-radius: 18px;
+  padding: 18px;
+  margin-bottom: 16px;
+  box-shadow: 0 6px 18px rgba(22, 52, 34, 0.08);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+label {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+input,
+select {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(42, 91, 63, 0.2);
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.primary {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.status {
+  margin-top: 12px;
+  color: var(--muted);
+}

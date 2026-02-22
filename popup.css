@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap');
+
+:root {
+  --bg: radial-gradient(circle at top, #f5f1e8, #e2ebd8 45%, #d2e4c0 100%);
+  --panel: rgba(255, 255, 255, 0.85);
+  --text: #1e2a1f;
+  --muted: #4b5b4a;
+  --accent: #2a5b3f;
+  --accent-2: #b06d2f;
+  --ramadan: linear-gradient(135deg, #143927, #1f6040 50%, #3b7c55 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.app {
+  width: 340px;
+  padding: 18px;
+}
+
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.app__tag {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 0 0 6px;
+}
+
+h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 22px;
+  margin: 0 0 4px;
+}
+
+h2 {
+  font-family: 'Fraunces', serif;
+  margin: 0 0 12px;
+  font-size: 16px;
+}
+
+.muted {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.settings {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.panel {
+  background: var(--panel);
+  border-radius: 16px;
+  padding: 14px;
+  margin-bottom: 12px;
+  box-shadow: 0 6px 16px rgba(20, 45, 30, 0.08);
+  backdrop-filter: blur(6px);
+}
+
+.ramadan {
+  background: var(--ramadan);
+  color: #fef7e5;
+}
+
+.ramadan h2 {
+  color: #fef7e5;
+}
+
+.ramadan .ramadan-card {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ramadan-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.ramadan-card {
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+}
+
+.label {
+  margin: 0 0 6px;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.time {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.times {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.time-card {
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(42, 91, 63, 0.15);
+}
+
+.time-card p {
+  margin: 0;
+}
+
+.time-card .label {
+  color: var(--muted);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list li {
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(42, 91, 63, 0.15);
+}
+
+.list strong {
+  display: block;
+  font-size: 13px;
+}
+
+.list span {
+  font-size: 12px;
+  color: var(--muted);
+}

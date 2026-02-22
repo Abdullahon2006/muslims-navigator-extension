@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Muslim's Navigator</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="app" id="app">
+      <header class="app__header">
+        <div>
+          <p class="app__tag">Muslim's Navigator</p>
+          <h1 id="hijri-date">Loading...</h1>
+          <p id="greg-date" class="muted"></p>
+        </div>
+        <button id="open-settings" class="settings">Settings</button>
+      </header>
+
+      <section class="panel" id="ramadan-panel">
+        <h2>Ramadan Focus</h2>
+        <div class="ramadan-grid">
+          <div class="ramadan-card">
+            <p class="label">Suhoor ends</p>
+            <p id="suhoor" class="time">--</p>
+          </div>
+          <div class="ramadan-card">
+            <p class="label">Iftar</p>
+            <p id="iftar" class="time">--</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="prayer-panel">
+        <h2>Prayer Times</h2>
+        <div class="times" id="prayer-times"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Upcoming Sacred Days</h2>
+        <ul id="holiday-list" class="list"></ul>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
